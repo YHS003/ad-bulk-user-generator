@@ -6,6 +6,18 @@ The tool simplifies the process of creating multiple AD users by generating a re
 
 ---
 
+## Screenshots
+
+### Main Window
+
+![Main Window](screenshots/main-window.png)
+
+### Command Preview
+
+![Preview Window](screenshots/preview-window.png)
+
+---
+
 ## Features
 
 ### User Configuration
@@ -33,7 +45,7 @@ The tool simplifies the process of creating multiple AD users by generating a re
 ### Account Options
 
 * Must Change Password at Next Logon
-* Password Never Expires
+* Password Never Exires
 * Account Disabled
 
 ### Export & Preview
@@ -47,9 +59,9 @@ The tool simplifies the process of creating multiple AD users by generating a re
 ## Technologies Used
 
 * Python 3
-* Tkinter GUI Framework
+* Tkinter
 
-No third-party libraries are required.
+No third-party GUI libraries are required.
 
 ---
 
@@ -58,7 +70,7 @@ No third-party libraries are required.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ad-bulk-user-generator.git
+git clone https://github.com/YHS003/ad-bulk-user-generator.git
 cd ad-bulk-user-generator
 ```
 
@@ -70,11 +82,33 @@ python main.py
 
 ---
 
+## Building an EXE File
+
+Install PyInstaller:
+
+```bash
+pip install pyinstaller
+```
+
+Build the executable:
+
+```bash
+pyinstaller --onefile --windowed main.py
+```
+
+The generated executable will be located in:
+
+```text
+dist/main.exe
+```
+
+---
+
 ## Usage
 
 ### Step 1
 
-Enter the number of users you want to create.
+Enter the number of users.
 
 ### Step 2
 
@@ -89,19 +123,19 @@ Generate the user table.
 
 ### Step 4
 
-Fill in user information.
+Fill in user information and account settings.
 
 ### Step 5
 
-Click **Preview Commands** to review generated commands.
+Preview generated commands.
 
 ### Step 6
 
-Click **Generate BAT** and save the batch file.
+Generate and save the BAT file.
 
 ### Step 7
 
-Run the generated `.bat` file on a Windows Server with Active Directory tools installed.
+Run the BAT file on a Windows Server machine with Active Directory tools installed.
 
 ---
 
@@ -118,11 +152,15 @@ dsadd user "cn=Sara,ou=Employees,dc=company,dc=local" -fn "Sara" -ln "Mohamed" -
 ## Project Structure
 
 ```text
-AD-Bulk-User-Generator/
+ad-bulk-user-generator/
 │
 ├── main.py
 ├── README.md
+├── LICENSE
+│
 └── screenshots/
+    ├── main-window.png
+    └── preview-window.png
 ```
 
 ---
@@ -131,29 +169,29 @@ AD-Bulk-User-Generator/
 
 * CSV Import
 * Excel Import/Export
-* Dark Mode
+* PowerShell Export
 * User Templates
-* PowerShell Export Support
-* Active Directory Integration
-* Search and Edit Existing Users
-* User Validation Rules
+* Dark Mode
+* Direct Active Directory Integration
 
 ---
 
 ## Author
 
-**Yehya Hamdy Shehata**
+**Yehya Hamdy Shehata (SCRonin)**
 
 * Computer Engineering Student
 * Cybersecurity Enthusiast
 * Python Developer
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub:
+https://github.com/YHS003
+
+Repository:
+https://github.com/YHS003/ad-bulk-user-generator
 
 ---
 
 ## License
 
 This project is licensed under the MIT License.
-
-Feel free to use, modify, and distribute this software.
