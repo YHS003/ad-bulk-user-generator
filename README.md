@@ -180,9 +180,8 @@ ad-bulk-user-generator/
 
 **Yehya Hamdy Shehata (SCRonin)**
 
-* Computer Engineering Student
+* Computer & Control Engineer
 * Cybersecurity Enthusiast
-* Python Developer
 
 GitHub:
 https://github.com/YHS003
